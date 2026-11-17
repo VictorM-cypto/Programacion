@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio CSS</title>
+    
+    <!-- Vinculamos el archivo CSS externo -->
+    <link rel="stylesheet" href="estilo.css">
+    
+    <!-- Estilos CSS internos en la cabecera -->
+    <style>
+        /* Este estilo se aplica solo en esta página */
+        .parrafo-interno {
+            color: red;  /* Color de texto rojo */
+        }
+    </style>
+</head>
+<body>
+    <!-- Estilo INLINE: directamente en el atributo style -->
+    <p style="background-color: yellow;">Este párrafo tiene estilo inline</p>
+    
+    <!-- Estilo INTERNO: usa la clase definida en <style> arriba -->
+    <p class="parrafo-interno">Este párrafo tiene estilo interno</p>
+    
+    <!-- Estilo EXTERNO: usa la clase del archivo estilo.css -->
+    <p class="parrafo-externo">Este párrafo tiene estilo externo</p>
+</body>
+</html>

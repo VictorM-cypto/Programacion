@@ -1,0 +1,5 @@
+/* Archivo CSS externo - puede ser usado por múltiples páginas HTML */
+.parrafo-externo {
+    border: 2px solid blue;  /* Borde sólido azul de 2 píxeles */
+    padding: 10px;           /* Espacio interior para que el texto no toque el borde */
+}

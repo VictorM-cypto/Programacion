@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        /* Selector que navega por el árbol DOM:
+           #contenedor = div con id contenedor (padre)
+           p = párrafos dentro del contenedor (hijos del div)
+           span = spans dentro de esos párrafos (nietos del div) */
+        #contenedor p span {
+            background-color: yellow;  /* Fondo amarillo */
+            font-weight: bold;         /* Texto en negrita */
+            padding: 2px 5px;          /* Espaciado interno para destacar */
+        }
+        
+        /* Estilo para los párrafos para verlos mejor */
+        #contenedor p {
+            margin: 10px 0;           /* Margen vertical entre párrafos */
+            padding: 5px;             /* Espacio interno */
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor padre -->
+    <div id="contenedor">
+        <!-- Tres párrafos hermanos -->
+        <p>Primer párrafo</p>
+        <p>Segundo párrafo con <span>texto destacado</span></p>
+        <p>Tercer párrafo</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .caja-imagen {
+            /* Dimensiones fijas de la caja */
+            width: 400px;
+            height: 300px;
+            
+            /* Establece la imagen de fondo usando url() */
+            background-image: url('https://via.placeholder.com/400x300');
+            
+            /* no-repeat: la imagen aparece solo una vez
+               Otras opciones: repeat, repeat-x (horizontal), repeat-y (vertical) */
+            background-repeat: no-repeat;
+            
+            /* cover: escala la imagen para cubrir todo el contenedor
+               Otras opciones: contain (imagen completa visible), 100% 100% (exacto) */
+            background-size: cover;
+            
+            /* center: centra la imagen horizontal y verticalmente
+               Otras opciones: top, bottom, left, right, top left, etc. */
+            background-position: center;
+            
+            /* Borde para visualizar mejor la caja */
+            border: 2px solid black;
+            
+            /* Para añadir texto sobre la imagen */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="caja-imagen">
+        Texto sobre la imagen
+    </div>
+</body>
+</html>

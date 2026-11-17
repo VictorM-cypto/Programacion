@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        /* Selector de CLASE: el punto (.) indica una clase
+           Se aplica a TODOS los elementos con class="destacado" */
+        .destacado {
+            color: blue;         /* Color de texto azul */
+            font-size: 18px;     /* Tamaño de fuente aumentado */
+        }
+        
+        /* Selector de ID: la almohadilla (#) indica un id
+           Se aplica SOLO al elemento con id="importante"
+           Los IDs deben ser ÚNICOS en toda la página */
+        #importante {
+            background-color: yellow;  /* Fondo amarillo */
+            font-weight: bold;         /* Texto en negrita */
+            padding: 10px;             /* Espacio interno */
+            border-left: 4px solid red; /* Borde izquierdo para destacar */
+        }
+    </style>
+</head>
+<body>
+    <!-- Tres párrafos con la MISMA clase (esto es válido) -->
+    <p class="destacado">Primer párrafo destacado</p>
+    <p class="destacado">Segundo párrafo destacado</p>
+    <p class="destacado">Tercer párrafo destacado</p>
+    
+    <!-- UN SOLO párrafo con este id (debe ser único) -->
+    <p id="importante">Este es el párrafo más importante</p>
+</body>
+</html>

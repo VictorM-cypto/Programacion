@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Pseudo-clase :first-child 
+           Selecciona el primer li de la lista */
+        li:first-child {
+            color: green;          /* Color de texto verde */
+            font-weight: bold;     /* En negrita para destacar */
+        }
+        
+        /* Pseudo-clase :nth-child(even)
+           Selecciona los elementos en posiciones PARES (2, 4, 6...) */
+        li:nth-child(even) {
+            background-color: #f0f0f0;  /* Fondo gris claro */
+        }
+        
+        /* Nota: también existe :nth-child(odd) para impares */
+        
+        /* Pseudo-clase :hover
+           Se activa cuando el cursor pasa sobre el elemento */
+        li:hover {
+            background-color: yellow;  /* Fondo amarillo al pasar el ratón */
+            cursor: pointer;           /* Cambia el cursor a manita */
+            padding-left: 10px;        /* Añade padding para efecto visual */
+            transition: all 0.3s;      /* Transición suave del cambio */
+        }
+        
+        /* Estilos base para mejorar la apariencia */
+        li {
+            padding: 8px;
+            margin: 5px 0;
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Elemento 1 (primero - verde)</li>
+        <li>Elemento 2 (par - fondo gris)</li>
+        <li>Elemento 3 (impar)</li>
+        <li>Elemento 4 (par - fondo gris)</li>
+        <li>Elemento 5 (impar)</li>
+    </ul>
+</body>
+</html>
